@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para ti, mi vida ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Georgia', serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px #000;
+    }
+    p {
+      font-size: 1.3em;
+      max-width: 800px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    button {
+      background: #fff;
+      color: #e75480;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e75480;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Para ti, mi vida ❤️</h1>
+
+  <p>
+    Hoy desperté de un sueño maravilloso y mágico… por supuesto, eras tú mi vida.
+    Fue de esos sueños tan reales que uno no sabe si lo tomó, si lo vivió o si fue un aviso del destino.
+    Te llevaba de la mano, cantábamos, reíamos, y cada caricia tuya me hacía creer que el universo había conspirado para juntarnos nuevamente.
+  </p>
+
+  <p>
+    Me haces demasiada falta: tu voz suave, esos ojitos hermosos, tus muñequitos que me encantas,
+    tus abrazos curadores y llenos de ternura, tus besos que me encienden por completo.
+    Estoy perdidamente enamorado de ti, y no hay día en que no te piense, te extrañe con todo mi ser.
+  </p>
+
+  <p>
+    Cada latido mío es un “te amo”. Sin ti la vida pierde brillo.
+    Te necesito como se necesita el aire, como se necesita el agua, como se necesita el corazón latiendo.
+    Eres mi pasión, mi calma, mi eternidad.
+  </p>
+
+  <button onclick="document.getElementById('song').play()">🎶 Escucha nuestra canción</button>
+
+  <audio id="song" loop>
+    <!-- TODO: change this to the path or URL of your MP3 file -->
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
