@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Para ti, mi vida ❤️</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #ffdde1, #ee9ca7);
-      font-family: 'Georgia', serif;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 30px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 6px #000;
-    }
-    p {
-      font-size: 1.3em;
-      max-width: 800px;
-      line-height: 1.8;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 3px #000;
-    }
-    button {
-      background: #fff;
-      color: #e75480;
-      border: none;
-      padding: 15px 30px;
-      border-radius: 30px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #e75480;
-      color: #fff;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Mi amor eterno 💖</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #ff9ccf, #ff66b3);
+    animation: bgAnimation 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes bgAnimation {
+    0% { background: linear-gradient(135deg, #ff9ccf, #ff66b3); }
+    50% { background: linear-gradient(135deg, #ffb3d9, #ff80bf); }
+    100% { background: linear-gradient(135deg, #ff9ccf, #ff66b3); }
+  }
+
+  .carta {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    line-height: 1.8;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #ffe6f0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #660033;
+  }
+
+  p { margin-bottom: 18px; }
+  .firma { margin-top: 30px; font-size: 22px; font-style: italic; color: #ffccf2; }
+
+  #playButton {
+    display: none; /* botón invisible */
+  }
+</style>
 </head>
-<body>
-  <h1>Para ti, mi vida ❤️</h1>
+<body onload="playAudio()">
 
-  <p>
-    Hoy desperté de un sueño maravilloso y mágico… por supuesto, eras tú mi vida.
-    Fue de esos sueños tan reales que uno no sabe si lo tomó, si lo vivió o si fue un aviso del destino.
-    Te llevaba de la mano, cantábamos, reíamos, y cada caricia tuya me hacía creer que el universo había conspirado para juntarnos nuevamente.
-  </p>
+<h1>Mi vida, mi pasión 💕</h1>
+<div class="carta">
+  <p>Cuando me dijiste que estabas en Target, sentí un relámpago atravesar mi alma.
+  Perdí el sentido del tiempo y del espacio porque solo quería correr hacia ti,
+  abrazarte y besarte con un fuego que ni todos los besos del universo podrían contener.</p>
 
-  <p>
-    Me haces demasiada falta: tu voz suave, esos ojitos hermosos, tus muñequitos que me encantas,
-    tus abrazos curadores y llenos de ternura, tus besos que me encienden por completo.
-    Estoy perdidamente enamorado de ti, y no hay día en que no te piense, te extrañe con todo mi ser.
-  </p>
+  <p>Bajé las escaleras con prisa, casi volando, mientras mi rodilla dolía y mis manos
+  temblaban al ponerme los zapatos. Nada podía detener este amor que me consume.</p>
 
-  <p>
-    Cada latido mío es un “te amo”. Sin ti la vida pierde brillo.
-    Te necesito como se necesita el aire, como se necesita el agua, como se necesita el corazón latiendo.
-    Eres mi pasión, mi calma, mi eternidad.
-  </p>
+  <p>Te imaginaba conmigo, tus manos recorriéndome, tus labios buscando los míos
+  con hambre y dulzura. Cerraba los ojos y sentía cada roce, cada suspiro,
+  y mi corazón latía desbocado por ti.</p>
 
-  <button onclick="document.getElementById('song').play()">🎶 Escucha nuestra canción</button>
+  <p>Quiero perderme en ti, entregarme sin límites, que nuestros cuerpos hablen
+  un idioma ardiente que solo nosotros entendemos. Quiero tus besos salvajes,
+  tus caricias desesperadas, sentir tu piel contra la mía, y que todo lo demás
+  desaparezca en el fuego que nos consume.</p>
 
-  <audio id="song" loop>
-    <!-- TODO: change this to the path or URL of your MP3 file -->
-    <source src="song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <p>Y después, amor mío, quiero tu ternura. Recostar mi cabeza en tu pecho,
+  escuchar tu respiración mezclarse con la mía, sentir tu calma y tu protección.
+  Contigo quiero todo: la locura y la calma, la pasión y la dulzura,
+  el delirio y la ternura… todo lo que somos juntos.</p>
+
+  <p class="firma">Siempre tuya, en cuerpo, alma y pasión<br><strong>Javi</strong></p>
+</div>
+
+<!-- Música de fondo -->
+<audio id="miAudio" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<!-- Botón invisible que activa el audio en caso de bloqueo -->
+<button id="playButton" onclick="document.getElementById('miAudio').play()">Play</button>
+
+<script>
+function playAudio() {
+  var audio = document.getElementById('miAudio');
+  audio.volume = 0.5; // ajusta el volumen inicial
+  audio.play().catch(function() {
+    // si el navegador bloquea autoplay, se activa un botón invisible
+    document.getElementById('playButton').style.display = 'block';
+    document.getElementById('playButton').click();
+    document.getElementById('playButton').style.display = 'none';
+  });
+}
+</script>
+
 </body>
 </html>
