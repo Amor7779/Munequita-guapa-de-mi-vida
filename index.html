@@ -85,6 +85,16 @@
   Tu navegador no soporta audio HTML5.
 </audio>
 
+<script>
+  // Reproduce el audio al primer clic en la página
+  document.body.addEventListener("click", function() {
+    var audio = document.getElementById("miAudio");
+    audio.volume = 0.5; // Ajusta el volumen si quieres
+    audio.play();
+  }, {once:true});
+</script>
+
+
 <!-- Botón invisible que activa el audio en caso de bloqueo -->
 <button id="playButton" onclick="document.getElementById('miAudio').play()">Play</button>
 
@@ -103,3 +113,4 @@ function playAudio() {
 
 </body>
 </html>
+
