@@ -86,13 +86,13 @@
 </audio>
 
 <script>
-  // Reproduce el audio al primer clic en la página
   document.body.addEventListener("click", function() {
     var audio = document.getElementById("miAudio");
-    audio.volume = 0.5; // Ajusta el volumen si quieres
+    audio.volume = 0.5;
     audio.play();
   }, {once:true});
 </script>
+
 
 
 <!-- Botón invisible que activa el audio en caso de bloqueo -->
@@ -113,4 +113,5 @@ function playAudio() {
 
 </body>
 </html>
+
 
